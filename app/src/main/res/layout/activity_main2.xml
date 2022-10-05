@@ -1,0 +1,1281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context=".Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="157dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="서비스 전체보기"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="47dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="18dp"
+                    android:gravity="center"
+                    android:text="배달"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="53dp"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/textView22"
+                    android:layout_marginStart="15dp"
+                    android:background="#000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="47dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="28dp"
+                    android:gravity="center"
+                    android:text="포장"
+                    android:textColor="#B3B3B3"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView22"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:background="#b3b3b3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView19"
+                                android:layout_width="44dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="26dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/finger" />
+
+                            <ImageView
+                                android:id="@+id/imageView20"
+                                android:layout_width="51dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView19"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food" />
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="64dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toStartOf="@+id/imageView22"
+                                app:layout_constraintStart_toEndOf="@+id/imageView20"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/fod1" />
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView21"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="53dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView22"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView24"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_1" />
+
+                            <ImageView
+                                android:id="@+id/imageView25"
+                                android:layout_width="57dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView24"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_2" />
+
+                            <ImageView
+                                android:id="@+id/imageView26"
+                                android:layout_width="66dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView25"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_3" />
+
+                            <ImageView
+                                android:id="@+id/imageView27"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView26"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_4" />
+
+                            <ImageView
+                                android:id="@+id/imageView28"
+                                android:layout_width="67dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="15dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView27"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_5" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView29"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_1" />
+
+                            <ImageView
+                                android:id="@+id/imageView30"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_2" />
+
+                            <ImageView
+                                android:id="@+id/imageView31"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView30"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_3" />
+
+                            <ImageView
+                                android:id="@+id/imageView32"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView31"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_4" />
+
+                            <ImageView
+                                android:id="@+id/imageView33"
+                                android:layout_width="67dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView32"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_5" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView34"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_1" />
+
+                            <ImageView
+                                android:id="@+id/imageView35"
+                                android:layout_width="57dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView34"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_2" />
+
+                            <ImageView
+                                android:id="@+id/imageView36"
+                                android:layout_width="66dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="13dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView35"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_3" />
+
+                            <ImageView
+                                android:id="@+id/imageView37"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="13dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView36"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_4" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#DADADA"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout1" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="17dp"
+                    android:text="배달홈으로 가기"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="-1dp"
+                    android:background="#dadada"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="70dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo1" />
+
+                <ImageView
+                    android:id="@+id/imageView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#dadada"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view7">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView44"
+                                android:layout_width="44dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="26dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/finger" />
+
+                            <ImageView
+                                android:id="@+id/imageView45"
+                                android:layout_width="51dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="25dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView44"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food" />
+
+                            <ImageView
+                                android:id="@+id/imageView46"
+                                android:layout_width="64dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView45"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2" />
+
+                            <ImageView
+                                android:id="@+id/imageView47"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView46"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_1" />
+
+                            <ImageView
+                                android:id="@+id/imageView48"
+                                android:layout_width="53dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_weight="1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView47"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView49"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_3" />
+
+                            <ImageView
+                                android:id="@+id/imageView50"
+                                android:layout_width="57dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView49"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/fod1" />
+
+                            <ImageView
+                                android:id="@+id/imageView51"
+                                android:layout_width="66dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView50"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_3" />
+
+                            <ImageView
+                                android:id="@+id/imageView52"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView51"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_5" />
+
+                            <ImageView
+                                android:id="@+id/imageView53"
+                                android:layout_width="67dp"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="15dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView52"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView54"
+                                android:layout_width="60dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food2_4" />
+
+                            <ImageView
+                                android:id="@+id/imageView55"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView54"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_2" />
+
+                            <ImageView
+                                android:id="@+id/imageView56"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView55"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food4_1" />
+
+                            <ImageView
+                                android:id="@+id/imageView57"
+                                android:layout_width="62dp"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                app:layout_constraintStart_toEndOf="@+id/imageView56"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_4" />
+
+                            <ImageView
+                                android:id="@+id/imageView58"
+                                android:layout_width="67dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView57"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/food3_5" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </TableRow>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="170dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_live" />
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#dadada"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view8">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView61"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live1_1" />
+
+                            <TextView
+                                android:id="@+id/textView62"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="지금 특가 중"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView63"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live1_2" />
+
+                            <TextView
+                                android:id="@+id/textView64"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="라이브 캘린더"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView65"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live2_1" />
+
+                            <TextView
+                                android:id="@+id/textView66"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="고기·수산"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView67"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live2_2" />
+
+                            <TextView
+                                android:id="@+id/textView68"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="과일"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView69"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live3_1" />
+
+                            <TextView
+                                android:id="@+id/textView70"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="간식·디저트·음료"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView71"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live3_2" />
+
+                            <TextView
+                                android:id="@+id/textView72"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="상품권"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView73"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live4_1" />
+
+                            <TextView
+                                android:id="@+id/textView74"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="간편식"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView75"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live4_2" />
+
+                            <TextView
+                                android:id="@+id/textView76"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="유아·건강·생활"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="132dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_present" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="60dp"
+                android:background="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                <ImageView
+                    android:id="@+id/imageView77"
+                    android:layout_width="135dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo_nation" />
+
+                <ImageView
+                    android:id="@+id/imageView78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#dadada"
+                    app:layout_constraintBottom_toTopOf="@+id/tableLayout4"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view9">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView79"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/live2_2" />
+
+                            <TextView
+                                android:id="@+id/textView80"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="과일·채소"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView81"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation1_2" />
+
+                            <TextView
+                                android:id="@+id/textView82"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="간편식"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView83"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation2_1" />
+
+                            <TextView
+                                android:id="@+id/textView84"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="반찬"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView85"
+                                android:layout_width="0dp"
+                                android:layout_height="33dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation2_2" />
+
+                            <TextView
+                                android:id="@+id/textView86"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="간식·디저트"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView87"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation3_1" />
+
+                            <TextView
+                                android:id="@+id/textView88"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="고기"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView89"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation3_1" />
+
+                            <TextView
+                                android:id="@+id/textView90"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="해산물"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView100"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation4_1" />
+
+                            <TextView
+                                android:id="@+id/textView101"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="양념·조미료"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView102"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation4_2" />
+
+                            <TextView
+                                android:id="@+id/textView103"
+                                android:layout_width="85dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="10dp"
+                                android:text="차·음료"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="20dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/imageView101"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/nation5" />
+
+                            <TextView
+                                android:id="@+id/textView102"
+                                android:layout_width="33dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:paddingLeft="5dp"
+                                android:text="전통주"
+                                android:textColor="#000000"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="-1dp"
+                    android:background="#dadada"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
