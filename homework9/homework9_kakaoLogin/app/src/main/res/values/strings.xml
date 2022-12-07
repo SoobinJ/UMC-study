@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">homework9</string>
+
+    <!-- Kakao KEY설정[AndroidManifest.xml에도 설정]-->
+    <!-- Kakao-init에서 사용 -->
+    <string name="kakao_app_key">4a4c030aa11e2776d0d04b98a3ee92f3</string>
+
+    <!-- AndroidManifest.xml에서 사용 -->
+    <string name="kakao_app_key2">kakao4a4c030aa11e2776d0d04b98a3ee92f3</string>
+</resources>
