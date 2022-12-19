@@ -1,8 +1,26 @@
 # UMC-study
+- 노션
 
 ## 2주차 과제
+https://www.notion.so/7422e8ac4e3c4c5e9fc00ac99dac04cb
 
-- 자주 사용하는 앱 하나의 화면을 알고있는 Layout과 View를 이용하여 3개이상 똑같이 따라하기
-- 배달의 민족
-- 마이페이지, 서비스 전체보기, 배민페이 페이지
-- 시현 영상 및 정리 노션 https://www.notion.so/7422e8ac4e3c4c5e9fc00ac99dac04cb
+## 3주차 과제
+https://humorous-cheshire-afc.notion.site/68827faddd504f7b94b93b9be981241e
+
+## 4주차 과제
+https://humorous-cheshire-afc.notion.site/e602496365014a3a8d46da6110b3f3d1
+
+## 5주차 과제
+https://humorous-cheshire-afc.notion.site/8d08b6ab870e4106bb894250e25a2c87
+
+## 6주차 과제
+https://humorous-cheshire-afc.notion.site/81e6f6afb78d48a588cb1b978a07038f
+
+## 7주차 과제
+https://humorous-cheshire-afc.notion.site/34b84df639b04daa8ff1e251c934bfed
+
+## 8주차 과제
+https://humorous-cheshire-afc.notion.site/3af46991ccff47c9a736e15c9390491f
+
+## 9주차 과제
+https://humorous-cheshire-afc.notion.site/e8d5656782194407828f12864cb91f0d
